@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box;
+	color: #333;
+	font-family: helvetica, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	position: absolute;
+	margin-left: calc((100vw - 980px)/2);
+	width: 980px;
+	height: 36px;
+	margin-top: 30px;
+	box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+	border-radius: 4px;
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0) 5%, rgba(0,0,0,0) 97%, rgba(0,0,0,0.45)),
+	                  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0) 0.2%, rgba(0,0,0,0) 99.8%, rgba(0,0,0,0.2)),  
+	                  linear-gradient(to top, #666, #5e5e5e 50%, #707070 51%, #808080);
+}
+
+.nav-ul {
+	border-radius: 4px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.nav-ul li {
+	flex: 1;
+	display: flex;
+	border-right: 1px solid rgba(0,0,0,0.2);
+	margin-left: 0.2px;
+	margin-right: 0.2px;
+	height: 100%;
+	color: white;
+	font-size: 13px;
+	align-items:center;
+	justify-content: center;
+}
+
+.nav-ul li:hover {
+	background: rgba(0,0,0, 0.3);
+}
+
+.apple {
+	height: 20px;
+	display: block;
+	margin: 0 auto;
+
+}
+
+.nav-ul .search {
+	min-width: 132px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border: none;
+}
+
+.nav-ul .search:hover {
+	background: none;
+}
+
+.search input {
+	background: none;
+	border-radius: 10px;
+	border-image: none;
+	height: 19px;
+	width: 106px;
+	/*-webkit-transition: color, text-shadow 0.3s, 0.3s;*/
+}
+
+.search button {
+	background: none;
+	border: none;
+	z-index: 0;
+	position: absolute;
+	top: 11px;
+}
+
+.search img {
+	height: 12px;
+}
+
+
+/* main */
+
+.main {
+	width: 100%;
+	margin: 0;
+	background: #688be3;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 3fr 1fr;
+	grid-gap: 3px;
+}
+
+.main >* {
+	/*background: #f7983e;*/
+}
+
+.big {
+	grid-column: 1 / -1;
+	grid-row: 1 / 2;
+	background-image: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg");
+	background-size: 100vw auto;
+	background-position: 0px -85vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.big >* {
+	height: 80px;
+}
+
+.big .head {
+	height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
